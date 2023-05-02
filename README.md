@@ -160,3 +160,7 @@ from core.disetify import *
 Вуаля!
 
 <img width="948" alt="Без названия 6" src="https://user-images.githubusercontent.com/76626915/235769484-d2e2ef40-4c0a-4117-b342-a84bde447fd7.png">
+
+# И наконец...
+Димани, выходи за меня замуж!
+Всё это создано для тебя! Я так старался!
