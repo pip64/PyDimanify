@@ -1,4 +1,5 @@
 from core.markov import *
+from core.files import *
 from core.variables import *
 from core.texts import *
 from core.randoms import *
