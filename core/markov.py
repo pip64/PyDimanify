@@ -2,6 +2,13 @@ import random
 
 class марков:
     def __init__(self, corpus, размер_состояния=2):
+        if not isinstance(corpus, str):
+            raise TypeError("Корпус должен быть строкой")
+        if not isinstance(размер_состояния, int):
+            raise TypeError("Размер состояния должен быть целым числом")
+        if размер_состояния < 1:
+            raise ValueError("Размер состояния должен быть больше или равен 1")
+
         self.state_size = размер_состояния
         self.lookup_dict = self._generate_lookup_dict(corpus)
 
@@ -32,6 +39,11 @@ class марков:
                 return next_word
 
     def создать(self, слов=20):
+        if not isinstance(слов, int):
+            raise TypeError("Количество слов должно быть целым числом")
+        if слов < self.state_size:
+            raise ValueError("Количество слов должно быть больше или равно размеру состояния")
+
         words = list(self.lookup_dict.keys())
         state = random.choice(words)
 
