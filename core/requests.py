@@ -4,7 +4,7 @@ class запрос:
     def __init__(self):
         pass
     
-    def гет(self, url, **kwargs):
+    def получить(self, url, **kwargs):
         response = requests.get(url, **kwargs)
         return response
     
