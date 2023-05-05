@@ -6,7 +6,6 @@ def диапазон(число):
         raise TypeError("Число должно быть целым числом")
     return [i for i in range(число)]
 
-
 def считать(что):
     if not isinstance(что, (list, str)):
         raise TypeError("Аргумент должен быть списком или строкой")
